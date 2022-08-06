@@ -1,4 +1,4 @@
-Explanatory Data Analysis on IPL Dataset available in Kaggle.
+Analysis IPL Dataset.
 
 Dataset : https://www.kaggle.com/datasets/manasgarg/ipl
 
