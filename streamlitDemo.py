@@ -43,6 +43,7 @@ st.write("Describing the dataframe")
 st.dataframe(deliveries_df.describe())
 
 st.header("Scroll down for answers!!")
+
 def maxScoreinSeasons_barChart():
     st.subheader("1) High score in each season")
     fig = plt.figure(figsize=(10,7))
@@ -189,34 +190,37 @@ def mostFour_Bowled():
     st.pyplot(fig)
     st.write("Ohh, there should be correlation with P.Kumar bowling most dot ball and giving most fours.")
     
-maxScoreinSeasons_barChart()
-maxScoreinSeasons_Graph()
-manOfMatch_Seasons()
-maxMatches_Won()
-tossFactor()
-batsman_highScore()
-mostSixes_Scored()
-mostBoundaries_Scored()
-mostDotBall_Faced()
-mostDotBalls_Bowled()
-mostSix_Bowled()
-mostFour_Bowled()
+if __name__ == "__main__":
+    #Calling each functions seperately
+    maxScoreinSeasons_barChart()
+    maxScoreinSeasons_Graph()
+    manOfMatch_Seasons()
+    maxMatches_Won()
+    tossFactor()
+    batsman_highScore()
+    mostSixes_Scored()
+    mostBoundaries_Scored()
+    mostDotBall_Faced()
+    mostDotBalls_Bowled()
+    mostSix_Bowled()
+    mostFour_Bowled()
 
-st.header("This is not the end, can go futher with the analysis")
-st.subheader("The results derived from the analysis with a possible dream winning team with bat/bowl")
-st.write("""
-Mumbai Indians - Most wins
-1.  Chris Gayle
-2.  Virat Kolhi
-3.  David Warner
-4.  Suresh Raina
-5.  RG Sharma
-6.  Gambhir
-7.  Pravin Kumar
-8.  Harbajan singh
-9.  Dw Steyn
-10. Malinga
-11. BKumar
-""")
+    st.header("This is not the end, can go futher with the analysis")
+    st.subheader("The results derived from the analysis with a possible dream winning team with bat/bowl")
+    st.write("""
+    Mumbai Indians - Most wins
+    1.  Chris Gayle
+    2.  Virat Kolhi
+    3.  David Warner
+    4.  Suresh Raina
+    5.  RG Sharma
+    6.  Gambhir
+    7.  Pravin Kumar
+    8.  Harbajan singh
+    9.  Dw Steyn
+    10. Malinga
+    11. BKumar
+    """)
+
 
 
