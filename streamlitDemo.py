@@ -27,6 +27,20 @@ Let's Explore the dataset and visualize the answers for below questions
 11. Bowlers consumed most fours in their ipl career?
 
 """)
+st.header("A Look into the Datasets")
+
+st.subheader("Matches dataset - Result of all matches between 2008 - 2017")
+st.write("First 15 values in the dataframe")
+st.dataframe(matches_df.head(15))
+st.write("Describing the dataframe")
+st.dataframe(matches_df.describe())
+
+st.subheader("Deliveries dataset - Ball by Ball data from above year")
+st.write("First 15 values in the dataframe")
+
+st.dataframe(deliveries_df.head(15))
+st.write("Describing the dataframe")
+st.dataframe(deliveries_df.describe())
 
 st.header("Scroll down for answers!!")
 def maxScoreinSeasons_barChart():
