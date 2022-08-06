@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-matches_df = pd.read_csv('matches.csv')
-deliveries_df = pd.read_csv('eliveries.csv')
+matches_df = pd.read_csv('/matches.csv')
+deliveries_df = pd.read_csv('/deliveries.csv')
 batsmen = matches_df[['id','season']].merge(deliveries_df, left_on = 'id', right_on = 'match_id', how = 'left').drop('id', axis = 1)
 seasons = batsmen.groupby(['season'])['total_runs'].sum().reset_index()
 
